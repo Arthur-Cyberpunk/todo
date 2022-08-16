@@ -5,7 +5,7 @@ type Props = {
   item: Item;
   onChange: (id: number, done: boolean) => void;
 };
-const ListItem = ({ item, onChange }: Props) => {
+export const ListItem = ({ item, onChange }: Props) => {
   return (
     <C.Container done={item.done}>
       <input
@@ -17,5 +17,3 @@ const ListItem = ({ item, onChange }: Props) => {
     </C.Container>
   );
 };
-
-export default ListItem;
